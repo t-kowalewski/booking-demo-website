@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
 
-    <body>
-        <div class="container">
-            <!-- Header -->
-            <header class="header">
-                Header
-            </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <!-- Main - Content -->
-            <div class="content">
-                <nav class="sidebar">
-                    Navigation
-                </nav>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-                <main class="hotel-view">
-                    Main
-                </main>
-            </div>
+  <title>trillo &mdash; Your all-in-one booking app</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <!-- Logo -->
+      <img src="img/logo.png" alt="website logo" class="logo">
+
+      <!-- Search -->
+      <form action="#" class="search">
+        <input class="search__input" placeholder="Search Hotels" type="text" name="" id="">
+        <button class="search__button">
+          <svg class="search__icon">
+            <use xlink:href="img/sprite.svg#icon-magnifying-glass">
+          </svg>
+        </button>
+      </form>
+
+      <!-- User navigation -->
+      <div class="user-nav">
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-bookmark">
+          </svg>
+          <span class="user-nav__notification">7</span>
         </div>
-    </body>
+
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-chat">
+          </svg>
+          <span class="user-nav__notification">5</span>
+        </div>
+
+        <div class="user-nav__user">
+          <img src="img/user-5.jpg" alt="User photo" class="user-nav__user-img">
+          <span class="user-nav__user-name">Jim</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main - Content -->
+    <div class="content">
+      <nav class="sidebar">
+        Navigation
+      </nav>
+
+      <main class="hotel-view">
+        Main
+      </main>
+    </div>
+  </div>
+</body>
+
 </html>
