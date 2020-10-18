@@ -1,3 +1,4 @@
+//==== HEADER ====
 // Logo
 .logo {
   height: 3.25rem;
@@ -125,4 +126,30 @@
       margin-left: 1rem;
     }
   }
+}
+
+////////////////////////////////////////////
+// ==== NAVIGATION ====
+.side-nav {
+
+  &__item {
+
+  }
+
+  &__link {
+
+  }
+
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+// Legal copy
+.legal {
+  font-size: 1.2rem;
+  color: var(--grey-light-4);
+  text-align: center;
+  padding: 2.5rem;
 }
