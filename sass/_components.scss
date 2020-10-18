@@ -131,18 +131,59 @@
 ////////////////////////////////////////////
 // ==== NAVIGATION ====
 .side-nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.5rem;
 
   &__item {
+    position: relative;
 
+    &:not(:last-child) {
+      margin-bottom: .7rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 3px;
+      background-color: var(--color-primary);
+      transform: scaleY(0);
+      transition: transform .2s,
+                  width .3s cubic-bezier(1,0,0,1) .2s;
+    }
+
+    &:hover::before,
+    &--active::before {
+      transform: scaleY(1);
+      width: 100%;
+    }
+
+    &:active::before {
+      background-color: var(--color-primary-light);
+    }
   }
 
-  &__link {
+  &__link:link,
+  &__link:visited {
+    display: flex;
+    align-items: center;
 
+    color: var(--grey-light-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.3rem 3rem;
+    position: relative;
+    z-index: 1;
   }
 
   &__icon {
     width: 1.75rem;
     height: 1.75rem;
+    fill: currentColor; // takes same color as current element or parent
+    margin-right: 2rem;
   }
 }
 
