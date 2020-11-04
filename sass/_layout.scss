@@ -40,21 +40,27 @@
   .details {
     display: flex;
     padding: 4.5rem;
+    font-size: 1.4rem;
     background-color: var(--grey-light-1);
     border-bottom: var(--line);
 
     &__description {
       flex: 0 0 60%; // if we have basis in % then grow & shrink are usually 0
       margin-right: 4.5rem;
-      font-size: 1.4rem;
-      background-color: #fff;
       padding: 3rem;
+      background-color: #fff;
       box-shadow: var(--shadow-light);
+
+      display: flex;
+      flex-direction: column;
     }
 
     &__user-reviews {
-      background-color: yellowgreen;
       flex: 1;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
