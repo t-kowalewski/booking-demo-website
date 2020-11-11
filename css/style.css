@@ -223,6 +223,45 @@ body {
     outline: none;
     animation: pulsate 1s infinite; }
 
+.btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 100px;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .btn::before {
+    content: "Book now";
+    display: inline-block;
+    padding: 2rem 7.5rem;
+    position: relative;
+    top: 0;
+    transition: top .2s; }
+  .btn::after {
+    content: "Only 4 rooms left";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 2rem 0;
+    left: 0;
+    top: -100%;
+    transition: top .2s; }
+  .btn:hover {
+    background-image: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light)); }
+    .btn:hover::before {
+      top: 100%;
+      top: 5rem; }
+    .btn:hover::after {
+      top: 0; }
+  .btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
+
 .paragraph:not(:last-of-type) {
   margin-bottom: 2rem; }
 
@@ -308,6 +347,15 @@ body {
     font-size: 2.25rem;
     font-weight: 300;
     color: var(--color-primary); }
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center; }
+  .cta__heading {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
 
 @keyframes pulsate {
   0% {
