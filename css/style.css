@@ -10,7 +10,7 @@
   --grey-dark-2: #777;
   --grey-dark-3: #999;
   --shadow-dark: 0 1rem 5rem rgba(0,0,0, .3);
-  --shadow-light: 0 2rem 4rem rgba(0,0,0, .15);
+  --shadow-light: 0 2rem 4rem rgba(0,0,0, .1);
   --line: 1px solid var(--grey-light-2); }
 
 *,
@@ -46,6 +46,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .search {
+      order: 1;
+      flex: 0 0 85%;
+      margin: auto; } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -161,11 +166,20 @@ body {
       .side-nav__link:link, .side-nav__link:visited {
         justify-content: center;
         padding: 2rem 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        flex-direction: column;
+        padding: 1.5rem .5rem; } }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
     fill: currentColor;
     margin-right: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__icon {
+        margin: 0 0 .5rem; }
+        .side-nav__icon + span {
+          text-align: center; } }
 
 .legal {
   font-size: 1.2rem;
@@ -192,6 +206,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__heading {
+        font-size: 1.8rem;
+        padding: 1.5rem 2rem; } }
   .overview__stars {
     margin-right: auto;
     display: flex; }
@@ -203,8 +221,14 @@ body {
     display: flex;
     align-items: center;
     font-size: 1.2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__location {
+        margin-left: 2rem; } }
     .overview__location-icon {
       margin-right: .5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .overview__location-icon {
+          display: none; } }
   .overview__rating {
     display: flex;
     flex-direction: column;
@@ -215,6 +239,9 @@ body {
     color: var(--grey-light-1);
     margin-left: 3rem;
     padding: 1rem 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__rating {
+        padding: .5rem 1rem; } }
     .overview__rating-average {
       font-size: 2.25rem;
       font-weight: 300;
@@ -222,6 +249,9 @@ body {
     .overview__rating-count {
       font-size: 1.1rem;
       text-transform: uppercase; }
+      @media only screen and (max-width: 37.5em) {
+        .overview__rating-count {
+          text-align: center; } }
 
 .btn-inline {
   border: none;
@@ -416,6 +446,10 @@ body {
   font-size: 1.4rem;
   background-color: #fff;
   border-bottom: var(--line); }
+  @media only screen and (max-width: 31.25em) {
+    .header {
+      flex-wrap: wrap;
+      height: 11rem; } }
 
 .content {
   display: flex; }
@@ -442,6 +476,9 @@ body {
     @media only screen and (max-width: 59.06em) {
       .hotel-view .details {
         padding: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .hotel-view .details {
+        flex-direction: column; } }
     .hotel-view .details__description {
       flex: 0 0 60%;
       margin-right: 4.5rem;
@@ -454,6 +491,10 @@ body {
         .hotel-view .details__description {
           margin-right: 3;
           padding: 2rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .hotel-view .details__description {
+          margin-right: 0;
+          margin-bottom: 3rem; } }
     .hotel-view .details__user-reviews {
       flex: 1;
       display: flex;

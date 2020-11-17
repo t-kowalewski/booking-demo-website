@@ -26,7 +26,7 @@
   --grey-dark-3: #999;
 
   --shadow-dark: 0 1rem 5rem rgba(0,0,0, .3);
-  --shadow-light: 0 2rem 4rem rgba(0,0,0, .15);
+  --shadow-light: 0 2rem 4rem rgba(0,0,0, .1);
 
   --line: 1px solid var(--grey-light-2);
 }
@@ -36,6 +36,8 @@
 $bp-largest: 75em; // 1200px / 16 
 $bp-large: 72.81em; // 1165px / 16
 $bp-medium: 59.06em; // 945px / 16
+$bp-small: 37.5em; // 600px / 16
+$bp-smallest: 31.25em; // 500px / 16
 
 // === Global reset & Styles
 *,
