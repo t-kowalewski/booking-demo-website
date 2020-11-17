@@ -32,6 +32,11 @@
 }
 
 
+// SASS Variables - media breakpoints
+$bp-largest: 75em; // 1200px / 16 
+$bp-large: 72.81em; // 1165px / 16
+$bp-medium: 59.06em; // 945px / 16
+
 // === Global reset & Styles
 *,
 *::before,
@@ -44,6 +49,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem - 10px
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%; // 1rem - 8px
+  }
 }
 
 body {
