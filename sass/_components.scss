@@ -249,6 +249,10 @@
       figcaption {
         color: #fff;
         transform: translateX(-50%) scaleX(1);
+
+        @media only screen and (max-width: $bp-medium) {
+          display: none;
+        }
       }
     }
   }
@@ -268,7 +272,7 @@
     text-align: center;
     color: transparent;
     width: 65%;
-    padding: .5rem 1rem;
+    padding: .3rem 0;
     background-color: var(--color-primary);
     transform: translateX(-50%) scaleX(0);
     
